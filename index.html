@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel crochet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+ <header class="top-bar">
+  <div class="logo">
+  <img src="Angel Crochet Logo.png" alt="Angel Crochet Logo"> <div class="logo">Angel Crochet</div>
+</div>
+  <nav>
+  <a href="index.html">Shop</a>
+  <a href="models.html">Models</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+  </nav>
+  <button class="cart-btn" onclick="toggleCart()">
+    Cart (<span id="cart-count">0</span>)
+  </button>
+</header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Handmade with Love</h1>
+    <p>Beautiful crochet creations made to feel special.</p>
+  </section>
+
+  <!-- Shop -->
+  <section class="shop-section" id="shop">
+    <h2>Our Collection</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="Velvet Scrunchies.jpg" alt="Scrunchies">
+        <h3>Scrunchies</h3>
+        <p>Soft crochet scrunchies for everyday style.</p>
+        <p class="price">3 for R50</p>
+        <p class="price">R20</p>
+        <div class="product-buttons">
+          <a href="scrunchies.html" class="view-btn">View Product</a>
+          <button class="add-btn" onclick="addToCart('Scrunchies',20), scrunchie">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="beanies.jpg" alt="Cozy Beanie">
+        <h3>Cozy Beanie</h3>
+        <p>Warm handmade beanies with a comfy fit.</p>
+        <p class="price">R100</p>
+
+        <div class="product-buttons">
+          <a href="beanie.html" class="view-btn">View Product</a>
+          <button class="add-btn" onclick="addToCart('Cozy Beanie', 100)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="keychain1.jpg" alt="Keychains">
+        <h3>Keychains</h3>
+        <p>Adorable handmade keychains in fun styles.</p>
+        <p class="price">3 for R70</p>
+        <p class="price">R25</p>
+        <div class="product-buttons">
+          <a href="keychains.html" class="view-btn">View Product</a>
+          <button class="add-btn" onclick="addToCart('Keychains', 25)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Velvet Scrunchies.jpg" alt="funkyscrunchie">
+        <h3>Funky scrunchie</h3>
+        <p>Soft Funky Scrunchies made with care.</p>
+        <p class="price">R30</p>
+
+        <div class="product-buttons">
+          <a href="funky-scrunchie.html" class="view-btn">View Product</a>
+          <button class="add-btn" onclick="addToCart('funkyscrunchie', 30)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+<!-- Cart Sidebar -->
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button onclick="toggleCart()" class="close-cart">×</button>
+      <button onclick="clearCart()" class="checkout-btn">Clear Cart</button>
+    </div>
+
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <p><strong>Total:</strong> R<span id="cart-total">0</span></p>
+      <button class="checkout-btn" onclick="checkoutWhatsApp()">Checkout on WhatsApp</button>
+    </div>
+  </aside>
+  
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay" onclick="toggleCart()"></div>
+
+  <!-- Floating WhatsApp -->
+  <a 
+    href="https://wa.me/27814694237?text=Hi%20I%20would%20like%20to%20place%20an%20order"
+    class="floating-whatsapp"
+    target="_blank"
+  >
+</a>
+<a href="https://wa.me/27814694237" class="floating-whatsapp" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+  <script src="script.js"></script>
+
+</div>
+</body>
+</html>
